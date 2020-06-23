@@ -18,4 +18,4 @@ branches:
   - gh-page
 env:
  global:
-   - GH_REF: git@github.com:caihai123/caihai123.github.io.git
+   - GH_REF: github.com/caihai123/caihai123.github.io.git
