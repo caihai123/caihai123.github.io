@@ -7,7 +7,7 @@ script:
   - npm run build 
 after_script:
   - cd ./dist
-  - "caihai123.com" > CNAME
+  - caihai123.com > CNAME
   - git init
   - git config user.name "caihai123"
   - git config user.email "1027747358@qq.com"
