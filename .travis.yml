@@ -8,8 +8,8 @@ script:
 after_script:
   - cd ./dist
   - git init
-  - git config user.name "caihai123"
-  - git config user.email "1027747358@qq.com"
+  - git config user.name "${GIT_NAME}"
+  - git config user.email "${GIT_EMAIL}"
   - git add .
   - git commit -m "Update docs"
   - git push --force --quiet "https://${GITHUB_TOKEN}@${GH_REF}" master:master
