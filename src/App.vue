@@ -120,7 +120,7 @@ h2 {
   background: -webkit-linear-gradient(left, #ff5f45 50%, #0798ec 0);
 }
 #section-1 >>> .fp-tableCell {
-  background-image: url(http://scarbroughstudios.com/img/codepen.svg);
+  background-image: url("~@/assets/codepen.svg");
   background-position: center center;
   background-size: 500px;
   -webkit-animation: scrollBad 5s linear infinite;
