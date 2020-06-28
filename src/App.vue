@@ -1,14 +1,14 @@
 <template>
   <div id="app">
     <full-page ref="fullpage" :options="options">
-      <div id="section-1" class="section">
+      <div id="section-1" class="section top">
         <h1>I am iron man</h1>
         <h2>蔡海的个人网站</h2>
         <ul>
           <li>
             <a
               class="section-1-button"
-              target="_black"
+              target="ducument"
               href="https://caihai123.com/documents/"
               >个人文档</a
             >
@@ -16,7 +16,7 @@
           <li>
             <a
               class="section-1-button"
-              target="_black"
+              target="github"
               href="https://github.com/caihai123/"
               >GitHub</a
             >
@@ -34,14 +34,7 @@ export default {
   data() {
     return {
       options: {
-        sectionsColor: [
-          "#2d7586",
-          "#ff5f45",
-          "#0798ec",
-          "#fc6c7c",
-          "grey",
-          "#0798ec",
-        ],
+        // sectionsColor: ["#ff5f45", "#0798ec", "#fc6c7c", "grey", "#0798ec"],
         // navigation: true,
       },
     };
@@ -49,31 +42,8 @@ export default {
 };
 </script>
 
-<style>
-body {
-  margin: 0;
-  padding: 0;
-}
-* {
-  box-sizing: border-box;
-}
-h1,
-h2,
-ol,
-ul {
-  margin: 0;
-  padding: 0;
-}
-ol,
-ul {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  color: #1f2f3d;
-}
+<style scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -107,5 +77,54 @@ h2 {
   background: #fff;
   border-radius: 5px;
   display: block;
+  color: #0798ec;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 5em;
+  }
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 2.4em;
+  }
+}
+</style>
+<style scoped>
+@-webkit-keyframes scrollBad {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -320px;
+  }
+}
+@-moz-keyframes scrollBad {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -320px;
+  }
+}
+@keyframes scrollBad {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -320px;
+  }
+}
+.top {
+  background: -webkit-linear-gradient(left, #ff5f45 50%, #0798ec 0);
+}
+#section-1 >>> .fp-tableCell {
+  background-image: url(http://scarbroughstudios.com/img/codepen.svg);
+  background-position: center center;
+  background-size: 500px;
+  -webkit-animation: scrollBad 5s linear infinite;
+  -moz-animation: scrollBad 5s linear infinite;
+  animation: scrollBad 5s linear infinite;
 }
 </style>

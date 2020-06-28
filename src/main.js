@@ -1,6 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
 import VueFullPage from "vue-fullpage.js";
+import "@/assets/index.css";
 import "@/assets/fullpage.css";
 
 Vue.config.productionTip = false;
