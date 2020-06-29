@@ -3,6 +3,7 @@ import App from "./App.vue";
 import VueFullPage from "vue-fullpage.js";
 import "@/assets/index.css";
 import "@/assets/fullpage.css";
+import "@/assets/my-button.css";
 
 Vue.config.productionTip = false;
 Vue.use(VueFullPage);
